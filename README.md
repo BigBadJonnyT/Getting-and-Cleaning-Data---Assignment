@@ -14,7 +14,15 @@ You should create one R script called run_analysis.R that does the following:
 File Descriptions
 ------------------
 
-###UCI HAR Dataset
+####UCI HAR Dataset
 
 This file contains the data used in the assignment. The data has been untouched, and the original can be acquired [from this link.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+####run_analysis.R
+
+This is the R script used to complete the assignment objectives. For more information on this function please refer to the CodeBook markdown file.
+
+####CodeBook.md
+
+This contains details on how the run_analysis script works as well as the variables used within the script.
 
