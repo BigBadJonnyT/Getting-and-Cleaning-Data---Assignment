@@ -20,21 +20,62 @@ detailed information on the data please refer to the README document located in 
 
 The specific datapoints used in the analysis are:
 
-#### X_test.txt
+##### X_test.txt & x_train.txt
 
-Part of the test data, this file contains the captured gyroscope accelation measurements of volunteers as they performed the six activities.
+These files contain the captured gyroscope accelation measurements of volunteers as they performed six activities. The test set contains the data of 70% of the volunteers, and the 
+train set contains the data ofr the remaining 30% of volunteers.
 
-#### y_test.txt
+##### y_test.txt & y_train.txt
 
-Lists the activity performed for each row of the x_test measurements. The activity is represented as a number from 1 to 6.
+Lists the activity performed for each row of the x_test and x_train measurements. The activity is represented as a number from 1 to 6.
 
-#### subject_test.txt
+##### subject_test.txt & subject_train.txt
 
-Identifies the volunteer who generated the measurements for each row of the x_test dataset. Each volunteer is assigned a unique number as an identifier (ranging from 1 to 30).
+Identifies the volunteer who generated the measurements for each row of the x_test and x_train datasets. Each volunteer is assigned a unique number as an identifier (ranging from 1 to 30).
 The unique identifiers are used in this dataset to represent the volunteer who generated the measurements.
 
-Script Process
+##### activity_labels.txt
+
+This file contains a list of all column names for the x_test and x_train datasets.
+
+
+Variables
 ---------------
 
-The script will run automatically upon being sourced into R. Once run the script will compile the separate data points into tables, and assign column names to the tables.
- 
+Please refer to the data segment of this document for more information on any of the data files referenced.
+
+##### x_train
+
+A table of the x_train.txt data.
+
+##### y_train
+
+A table of the y_train.txt data.
+
+##### subject_train
+
+A table of the subject_train.txt data.
+
+##### train_complete
+
+A table containing the complete train data, compiled by combining the columns of x_train, y_train and subject_train.
+
+##### x_test
+
+A table of the x_test.txt data.
+
+##### y_test
+
+A table of the y_test.txt data.
+
+##### subject_test
+
+A table of the subject_test.txt data.
+
+##### test_complete
+
+A table containing the complete test data, compiled by combining the columns of x_test, y_test and subject_test.
+
+##### complete_data
+
+A table containing the complete dataset, containing all rows and columns of the train_complete and test_complete tables. 
