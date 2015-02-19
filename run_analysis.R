@@ -34,7 +34,22 @@ test_complete[,c(562,563)] <- c(y_test, subject_test)
 
 complete_data <- rbind(test_complete, train_complete)
 
-##### remove un-needed tables #########
+##### Remove Columns Unrelated to mean or standard deviation #######
+
+required_fields <- c("563","562",grep("mean()",names(complete_data)), grep("std()",names(complete_data)))
+complete_data <- complete_data[,as.numeric(required_fields)]
+
+##### Replace Activity Number With Activity Name ##########
+
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
+
+for(i in c(1:nrow(activity_labels))){
+  activity_code <- activity_labels[i,1]
+  activity_value <- as.character(activity_labels[i,2])
+  complete_data$Activity[complete_data$Activity == activity_code] <- activity_value
+}
+
+##### remove un-needed variables #########
 
 rm(x_test)
 rm(y_test)
@@ -45,3 +60,4 @@ rm(x_names)
 rm(x_train)
 rm(y_train)
 rm(subject_train)
+rm(required_fields)
