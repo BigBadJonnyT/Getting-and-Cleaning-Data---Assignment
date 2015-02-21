@@ -52,6 +52,7 @@ for(i in c(1:nrow(activity_labels))){
 ##### Create and write Tidy data Set #########
 
 tidy_data <- aggregate(x= complete_data[,3:81], by= list("Subject" = complete_data$Subject,"Activity" = complete_data$Activity), mean)
+write.table(tidy_data, file="tidy_data.txt", row.name= FALSE)
 
 ##### remove un-needed variables #########
 
