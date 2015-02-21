@@ -49,15 +49,12 @@ for(i in c(1:nrow(activity_labels))){
   complete_data$Activity[complete_data$Activity == activity_code] <- activity_value
 }
 
+##### Create and write Tidy data Set #########
+
+tidy_data <- aggregate(x= complete_data[,3:81], by= list("Subject" = complete_data$Subject,"Activity" = complete_data$Activity), mean)
+
 ##### remove un-needed variables #########
 
-rm(x_test)
-rm(y_test)
-rm(subject_test)
-rm(test_complete)
-rm(train_complete)
-rm(x_names)
-rm(x_train)
-rm(y_train)
-rm(subject_train)
-rm(required_fields)
+rm(list = c('x_test','y_test','subject_test','test_complete','train_complete','x_names','x_train','y_train','subject_train','required_fields',
+     'activity_code', 'activity_value', 'activity_labels','i'))
+
