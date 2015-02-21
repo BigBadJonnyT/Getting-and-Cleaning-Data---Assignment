@@ -115,3 +115,13 @@ The run_analysis.R script will run automatically upon being sourced. Once run it
 17. Read the activity_labels.txt data into a data.frame. This is stored under the variable activity_labels.
 18. Replace each row of the Activity column of the complete_data table with the name of the activity. 
 19. Create a new table containing each unique Subject + Activity combination from the complete_data table, and the average of all other columns for rows that match that Subject + Activity combination.
+20. Remove all unrequired variables created by the script from the global environment. 
+
+Results
+--------------
+
+Once the script has completed it's process you will have the following:
+
+1. The complete_data table will be present in your global environment. This table contains all activities performed by all subjects, for all columns relating to mean or standard deviation. 
+2. The tidy_data table will be present in your global environment. This table contins the average of all measurements in the complete_data table grouped by unique Subject + Activity combinations.
+3. The tidy_data table will be writting into a text file in your working directory.
