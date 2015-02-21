@@ -8,7 +8,7 @@ Script Requirements
 
 The script has a few requirements in order to run sucessfully:
 
-1. The UCI HAR Dataset must be present on your machine.You can acquire the data [from this link.] Once downloaded the data should be extracted to your working directory.(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+1. The UCI HAR Dataset must be present on your machine.You can acquire the data [from this link.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) Once downloaded the data should be extracted to your working directory.
 2. Both the script, and the UCI HAR Dataset must be contained in your working directory.
 3. Patience. The script has not been optimised and is "not the quickest of cats at the best of times", so please be patient while it runs :-)
 
