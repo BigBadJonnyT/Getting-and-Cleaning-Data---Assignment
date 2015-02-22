@@ -83,7 +83,7 @@ A list of all fileds being kept in the complete data set.
 
 ##### complete_data
 
-A table containing all rows of data for all data sets. The columns kept are those listed in the required_fields variable. 
+A table containing all rows of data contained in the train_complete and test_complete tables. The columns kept are those listed in the required_fields variable. 
 
 ##### tidy_data
 
